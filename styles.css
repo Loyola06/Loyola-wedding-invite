@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    background-image: url(images/5609849.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+text-align: center;
+
+    filter: brightness;
+    background-position: center center;
+}
+
+
+
+
+.container {
+    border: 3px solid #C7253E;
+
+    width: 10%;             /* Reduce the width of the container */
+    padding: 20px;
+margin-top: 50px;
+    border-radius: 10px;    /* Rounded corners (optional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;     /* Centers the content inside the container */
+    color: black;
+}
+
+
+h2 {
+    color: #94B49F;
+    font-family: "Dancing Script", cursive;
+}
+
+h4{
+    font-family: "Prociono", serif;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    color: #243642;
+}
+
+
+.item-nav {
+    color: #C6A969;
+    padding-left: 30px;
+    font-family: 'Nova Square', sans-serif;
+}
+
+
+.item-nav:hover {
+color: #99BC85;
+}
+
+
+
+
+
+/* thsee are just for every change */
+@media only screen and (min-width: 990px) and (max-width: 1400px) {
+    .hide-on-laptop {
+        display: none;
+    }    
+    
+    .hol2 {
+        display: none;
+    }
+    .hol1 {
+        display: none;
+    }
+    
+    .btn {
+        display: none;
+
+    }
+    
+    .icon {
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+
+    body {
+        background-image: url(images/5609849.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    text-align: center;
+    
+        filter: brightness;
+        background-position: center center;
+    }
+    
+
+}
