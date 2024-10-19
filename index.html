@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Invitation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FEFAE0; /* Background color */
+            overflow: hidden; /* Prevent scrolling */
+            position: relative; /* Positioning for sprinkle container */
+        }
+
+        .envelope {
+            cursor: pointer;
+            width: 150px; /* Adjust size as needed */
+            transition: transform 0.6s ease; /* Animation for the envelope */
+        }
+
+        .envelope.open {
+            transform: rotateY(360deg); /* Rotate the envelope */
+        }
+
+        /* Flower Sprinkle Styles */
+        .sprinkle {
+            position: absolute;
+            width: 50px; /* Size of the flower */
+            height: 50px;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 1s ease; /* Animation for sprinkles */
+            pointer-events: none; /* Prevent interactions with sprinkles */
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" id="envelope" onclick="openEnvelope()">
+        <img src="images/envelope.png" alt="Envelope" />
+    </div>
+
+    <script>
+        function openEnvelope() {
+            const envelope = document.getElementById('envelope');
+            envelope.classList.add('open'); // Add class to trigger animation
+            
+            // Create flower sprinkle effect
+            for (let i = 0; i < 10; i++) { // Adjust number of sprinkles
+                createSprinkle();
+            }
+
+            // Redirect to another page after a delay
+            setTimeout(() => {
+                window.location.href = 'main-form.html'; // Change to your main content page
+            }, 1000); // Set a delay before redirection
+        }
+
+        function createSprinkle() {
+            const sprinkle = document.createElement('div');
+            sprinkle.className = 'sprinkle';
+            sprinkle.style.backgroundImage = 'url("images/flower.png")'; // Change to your flower image
+            sprinkle.style.backgroundSize = 'cover'; // Ensure the image covers the div
+            sprinkle.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+            sprinkle.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+            sprinkle.style.opacity = '1'; // Make it visible
+
+            document.body.appendChild(sprinkle);
+
+            // Animate sprinkle
+            setTimeout(() => {
+                sprinkle.style.transform = 'translateY(-100px)'; // Move sprinkle up
+                sprinkle.style.opacity = '0'; // Fade out
+            }, 100); // Short delay before animation starts
+
+            // Remove sprinkle after animation ends
+            setTimeout(() => {
+                sprinkle.remove();
+            }, 1500); // Match with animation duration
+        }
+    </script>
+</body>
+</html>

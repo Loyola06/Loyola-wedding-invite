@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    background-image: url(images/5609849.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+text-align: center;
+height: 100vh;
+    filter: brightness;
+    background-position: center center;
+}
+
+
+
+.item-nav {
+    color: #C6A969;
+    padding-left: 30px;
+    font-family: 'Nova Square', sans-serif;
+}
+
+
+.item-nav:hover {
+color: #99BC85;
+}
