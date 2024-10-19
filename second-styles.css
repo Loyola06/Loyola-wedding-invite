@@ -167,6 +167,36 @@ h1 {
     }
 }
 
+
+/* thsee are just for every change */
+@media only screen and (min-width: 990px) and (max-width: 1400px) {
+    .hide-on-laptop {
+        display: none;
+    }    
+    
+    .hol2 {
+        display: none;
+    }
+    .hol1 {
+        display: none;
+    }
+    
+    .btn {
+        display: none;
+
+    }
+    
+    .icon {
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+}
+
+
 /* Close Button styles */
 .close-btn {
     color: #b38b6d;

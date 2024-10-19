@@ -1,12 +1,13 @@
 body {
     padding: 0;
-    background-image: url(images/5609849.jpg);
+    background-image: url(images/ourstory.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
 text-align: center;
 height: 100vh;
+
     filter: brightness;
     background-position: center center;
 }
@@ -22,4 +23,144 @@ height: 100vh;
 
 .item-nav:hover {
 color: #99BC85;
+}
+
+h1 {
+    color: #243642;
+    font-family: "Dancing Script", cursive;
+    
+}
+
+h3 {
+    color: brown;
+    font-family: "Dancing Script", cursive;
+    
+}
+
+.container {
+    border: 1px solid sienna;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef9e8; /* Light ivory background for the body */
+    color: #4a403a; /* Text color */
+}
+
+.story-container {
+    background-color: rgba(255, 248, 240, 0.9); /* Ivory palette with slight transparency */
+    border: 2px solid #e8dcc3; /* Light ivory border */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto; /* Centering the story */
+    animation: fadeIn 1s ease-in-out; /* Adding animation for appearance */
+}
+
+.story-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #a67b5b; /* Title color */
+    margin-bottom: 20px;
+}
+
+.story-text {
+    line-height: 1.8;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 20px;
+    position: relative; /* For icon positioning */
+    padding-left: 30px; /* Space for icons */
+}
+
+.story-text i {
+    position: absolute;
+    left: 0;
+    color: #d6b76b; /* Icon color */
+    font-size: 1.5em;
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.story-text:hover i {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+.story-ending {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 30px;
+    color: #a67b5b; /* Changing color for emphasis */
+}
+
+
+.book-icon {
+    color: #4a90e2; /* Blue */
+}
+
+.coffee-icon {
+    color: #e67e22; /* Orange */
+}
+
+.friends-icon {
+    color: #27ae60; /* Green */
+}
+
+.laugh-icon {
+    color: #f39c12; /* Yellow */
+}
+
+.memories-icon {
+    color: #8e44ad; /* Purple */
+}
+
+.heart-icon {
+    color: #c0392b; /* Red */
+}
+
+.history-icon {
+    color: #2980b9; /* Dark Blue */
+}
+ 
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* thsee are just for every change */
+@media only screen and (min-width: 990px) and (max-width: 1400px) {
+    .hide-on-laptop {
+        display: none;
+    }    
+    
+    .hol2 {
+        display: none;
+    }
+    .hol1 {
+        display: none;
+    }
+    
+    .btn {
+        display: none;
+
+    }
+    
+    .icon {
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
 }
